@@ -1,3 +1,5 @@
+import React from 'react';
+
 const HeaderBottom = () => {
   return (
     <div className="header-bottom sticky-header">
@@ -78,7 +80,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/1.jpg)",
+                                'url(assets/images/menu/demos/1.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">
@@ -93,7 +95,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/2.jpg)",
+                                'url(assets/images/menu/demos/2.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">
@@ -108,7 +110,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/3.jpg)",
+                                'url(assets/images/menu/demos/3.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">
@@ -123,7 +125,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/4.jpg)",
+                                'url(assets/images/menu/demos/4.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">
@@ -138,7 +140,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/5.jpg)",
+                                'url(assets/images/menu/demos/5.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">05 - fashion store</span>
@@ -151,7 +153,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/6.jpg)",
+                                'url(assets/images/menu/demos/6.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">06 - fashion store</span>
@@ -164,7 +166,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/7.jpg)",
+                                'url(assets/images/menu/demos/7.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">07 - fashion store</span>
@@ -177,7 +179,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/8.jpg)",
+                                'url(assets/images/menu/demos/8.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">08 - fashion store</span>
@@ -190,7 +192,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/9.jpg)",
+                                'url(assets/images/menu/demos/9.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">09 - fashion store</span>
@@ -203,7 +205,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/10.jpg)",
+                                'url(assets/images/menu/demos/10.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">10 - shoes store</span>
@@ -216,7 +218,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/11.jpg)",
+                                'url(assets/images/menu/demos/11.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">
@@ -231,7 +233,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/12.jpg)",
+                                'url(assets/images/menu/demos/12.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">
@@ -246,7 +248,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/13.jpg)",
+                                'url(assets/images/menu/demos/13.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">13 - market</span>
@@ -259,7 +261,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/14.jpg)",
+                                'url(assets/images/menu/demos/14.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">
@@ -274,7 +276,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/15.jpg)",
+                                'url(assets/images/menu/demos/15.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">15 - lookbook 1</span>
@@ -287,7 +289,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/16.jpg)",
+                                'url(assets/images/menu/demos/16.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">16 - lookbook 2</span>
@@ -300,7 +302,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/17.jpg)",
+                                'url(assets/images/menu/demos/17.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">17 - fashion store</span>
@@ -313,7 +315,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/18.jpg)",
+                                'url(assets/images/menu/demos/18.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">
@@ -328,7 +330,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/19.jpg)",
+                                'url(assets/images/menu/demos/19.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">19 - games store</span>
@@ -341,7 +343,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/20.jpg)",
+                                'url(assets/images/menu/demos/20.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">20 - book store</span>
@@ -354,7 +356,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/21.jpg)",
+                                'url(assets/images/menu/demos/21.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">21 - sport store</span>
@@ -367,7 +369,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/22.jpg)",
+                                'url(assets/images/menu/demos/22.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">22 - tools store</span>
@@ -380,7 +382,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/23.jpg)",
+                                'url(assets/images/menu/demos/23.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">
@@ -395,7 +397,7 @@ const HeaderBottom = () => {
                             className="demo-bg"
                             style={{
                               backgroundImage:
-                                "url(assets/images/menu/demos/24.jpg)",
+                                'url(assets/images/menu/demos/24.jpg)',
                             }}
                           ></span>
                           <span className="demo-title">

@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   HeaderTop,
   HeaderMiddle,
@@ -6,7 +7,7 @@ import {
   NewsLetter,
   SignInModal,
   Footer,
-} from "./components/components";
+} from './components/components';
 
 type Props = {
   children: React.ReactNode;

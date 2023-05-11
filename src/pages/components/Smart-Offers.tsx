@@ -1,3 +1,5 @@
+import React from 'react';
+
 const SmartOffers = () => {
   return (
     <div className="container">
@@ -17,7 +19,7 @@ const SmartOffers = () => {
               </h4>
               <h3 className="banner-title">
                 <a href="!#">
-                  Save $150{" "}
+                  Save $150{' '}
                   <strong>
                     on Samsung <br />
                     Galaxy Note9

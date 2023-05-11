@@ -1,3 +1,5 @@
+import React from 'react';
+
 const NewArrivals = () => {
   return (
     <div className="container new-arrivals">
@@ -173,14 +175,14 @@ const NewArrivals = () => {
                   <a href="!#">Laptops</a>
                 </div>
                 <h3 className="product-title">
-                  <a href="product.html">MacBook Pro 13" Display, i5</a>
+                  <a href="product.html">MacBook Pro 13&rdquo; Display, i5</a>
                 </h3>
                 <div className="product-price">$1,199.99</div>
                 <div className="ratings-container">
                   <div className="ratings">
                     <div
                       className="ratings-val"
-                      style={{ width: "100%" }}
+                      style={{ width: '100%' }}
                     ></div>
                   </div>
                   <span className="ratings-text">( 4 Reviews )</span>
@@ -236,7 +238,7 @@ const NewArrivals = () => {
                 <div className="product-price">$79.99</div>
                 <div className="ratings-container">
                   <div className="ratings">
-                    <div className="ratings-val" style={{ width: "60%" }}></div>
+                    <div className="ratings-val" style={{ width: '60%' }}></div>
                   </div>
                   <span className="ratings-text">( 6 Reviews )</span>
                 </div>
@@ -290,28 +292,28 @@ const NewArrivals = () => {
                 </div>
                 <h3 className="product-title">
                   <a href="product.html">
-                    Apple - 11 Inch iPad Pro with Wi-Fi 256GB{" "}
+                    Apple - 11 Inch iPad Pro with Wi-Fi 256GB{' '}
                   </a>
                 </h3>
                 <div className="product-price">$899.99</div>
                 <div className="ratings-container">
                   <div className="ratings">
-                    <div className="ratings-val" style={{ width: "80%" }}></div>
+                    <div className="ratings-val" style={{ width: '80%' }}></div>
                   </div>
                   <span className="ratings-text">( 4 Reviews )</span>
                 </div>
 
                 <div className="product-nav product-nav-dots">
-                  <a href="!#" style={{ background: "#edd2c8" }}>
+                  <a href="!#" style={{ background: '#edd2c8' }}>
                     <span className="sr-only">Color name</span>
                   </a>
-                  <a href="!#" style={{ background: "#eaeaec" }}>
+                  <a href="!#" style={{ background: '#eaeaec' }}>
                     <span className="sr-only">Color name</span>
                   </a>
                   <a
                     href="!#"
                     className="active"
-                    style={{ background: "#333333" }}
+                    style={{ background: '#333333' }}
                   >
                     <span className="sr-only">Color name</span>
                   </a>
@@ -378,7 +380,7 @@ const NewArrivals = () => {
                   <div className="ratings">
                     <div
                       className="ratings-val"
-                      style={{ width: "100%" }}
+                      style={{ width: '100%' }}
                     ></div>
                   </div>
                   <span className="ratings-text">( 10 Reviews )</span>
@@ -388,14 +390,14 @@ const NewArrivals = () => {
                   <a
                     href="!#"
                     className="active"
-                    style={{ background: "#edd2c8" }}
+                    style={{ background: '#edd2c8' }}
                   >
                     <span className="sr-only">Color name</span>
                   </a>
-                  <a href="!#" style={{ background: "#eaeaec" }}>
+                  <a href="!#" style={{ background: '#eaeaec' }}>
                     <span className="sr-only">Color name</span>
                   </a>
-                  <a href="!#" style={{ background: "#333333" }}>
+                  <a href="!#" style={{ background: '#333333' }}>
                     <span className="sr-only">Color name</span>
                   </a>
                 </div>
@@ -448,12 +450,12 @@ const NewArrivals = () => {
                   <a href="!#">TV & Home Theater</a>
                 </div>
                 <h3 className="product-title">
-                  <a href="product.html">Samsung - 55" Class LED 2160p Smart</a>
+                  <a href="product.html">Samsung - 55&rdquo; Class LED 2160p Smart</a>
                 </h3>
                 <div className="product-price">$899.99</div>
                 <div className="ratings-container">
                   <div className="ratings">
-                    <div className="ratings-val" style={{ width: "60%" }}></div>
+                    <div className="ratings-val" style={{ width: '60%' }}></div>
                   </div>
                   <span className="ratings-text">( 5 Reviews )</span>
                 </div>
@@ -506,14 +508,14 @@ const NewArrivals = () => {
                   <a href="!#">Laptops</a>
                 </div>
                 <h3 className="product-title">
-                  <a href="product.html">MacBook Pro 13" Display, i5</a>
+                  <a href="product.html">MacBook Pro 13&rdquo; Display, i5</a>
                 </h3>
                 <div className="product-price">$1,199.99</div>
                 <div className="ratings-container">
                   <div className="ratings">
                     <div
                       className="ratings-val"
-                      style={{ width: "100%" }}
+                      style={{ width: '100%' }}
                     ></div>
                   </div>
                   <span className="ratings-text">( 4 Reviews )</span>

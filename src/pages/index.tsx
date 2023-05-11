@@ -1,4 +1,5 @@
-import Layout from "./Layout";
+import React from 'react';
+import Layout from './Layout';
 import {
   IntroSlider,
   ExploreCategories,
@@ -9,7 +10,7 @@ import {
   BrandSlider,
   TrendingProducts,
   Recommendations,
-} from "./components/components";
+} from './components/components';
 
 const Home = () => {
   return (

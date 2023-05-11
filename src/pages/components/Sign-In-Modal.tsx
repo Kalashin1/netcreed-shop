@@ -1,4 +1,8 @@
-interface SignInModalProps {}
+import React from 'react';
+
+interface SignInModalProps {
+  children?: React.ReactNode
+}
 
 const SignInModal: React.FC<SignInModalProps> = () => {
   return (

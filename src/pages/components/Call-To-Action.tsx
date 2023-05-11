@@ -1,9 +1,11 @@
+import React from 'react';
+
 const CallToAction = () => {
   return (
     <div className="container">
       <div
         className="cta cta-border mb-5"
-        style={{ backgroundImage: "url(assets/images/demos/demo-4/bg-1.jpg)" }}
+        style={{ backgroundImage: 'url(assets/images/demos/demo-4/bg-1.jpg)' }}
       >
         <img
           src="assets/images/demos/demo-4/camera.png"

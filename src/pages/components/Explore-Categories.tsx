@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ExploreCategories = () => {
   return (
     <div className="container">

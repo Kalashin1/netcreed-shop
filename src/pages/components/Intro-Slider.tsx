@@ -1,3 +1,5 @@
+import React from 'react';
+
 const IntroSlider = () => {
   return (
     <div className="intro-slider-container mb-5">
@@ -19,7 +21,7 @@ const IntroSlider = () => {
           className="intro-slide"
           style={{
             backgroundImage:
-              "url(assets/images/demos/demo-4/slider/slide-1.png)",
+              'url(assets/images/demos/demo-4/slider/slide-1.png)',
           }}
         >
           <div className="container intro-content">
@@ -51,7 +53,7 @@ const IntroSlider = () => {
           className="intro-slide"
           style={{
             backgroundImage:
-              "url(assets/images/demos/demo-4/slider/slide-2.png)",
+              'url(assets/images/demos/demo-4/slider/slide-2.png)',
           }}
         >
           <div className="container intro-content">
@@ -60,7 +62,7 @@ const IntroSlider = () => {
                 <h3 className="intro-subtitle text-primary">New Arrival</h3>
                 <h1 className="intro-title">
                   Apple iPad Pro <br />
-                  12.9 Inch, 64GB{" "}
+                  12.9 Inch, 64GB{' '}
                 </h1>
 
                 <div className="intro-price">

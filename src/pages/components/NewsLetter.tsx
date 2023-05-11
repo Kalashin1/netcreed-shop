@@ -1,3 +1,5 @@
+import React from 'react';
+
 const NewsLetter = () => {
   return (
     <div
@@ -17,10 +19,10 @@ const NewsLetter = () => {
                   height="15"
                 />
                 <h2 className="banner-title">
-                  get{" "}
+                  get{' '}
                   <span>
                     25<em>%</em>
-                  </span>{" "}
+                  </span>{' '}
                   off
                 </h2>
                 <p>

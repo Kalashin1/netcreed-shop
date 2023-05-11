@@ -1,9 +1,11 @@
+import React from 'react';
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div
         className="cta bg-image bg-dark pt-4 pb-5 mb-0"
-        style={{ backgroundImage: "url(assets/images/demos/demo-4/bg-5.jpg)" }}
+        style={{ backgroundImage: 'url(assets/images/demos/demo-4/bg-5.jpg)' }}
       >
         <div className="container">
           <div className="row justify-content-center">
@@ -11,7 +13,7 @@ const Footer = () => {
               <div className="cta-heading text-center">
                 <h3 className="cta-title text-white">Get The Latest Deals</h3>
                 <p className="cta-desc text-white">
-                  and receive{" "}
+                  and receive{' '}
                   <span className="font-weight-normal">$20 coupon</span> for
                   first shopping
                 </p>

@@ -1,6 +1,6 @@
-import { FC } from "react";
+import React from 'react';
 
-const Benefit: FC = () => {
+const Benefit: React.FC = () => {
   return (
     <div className="icon-boxes-container bg-transparent">
       <div className="container">

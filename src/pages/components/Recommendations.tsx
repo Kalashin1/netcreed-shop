@@ -1,4 +1,8 @@
-interface RecommendationsProps {}
+import React from 'react';
+
+interface RecommendationsProps {
+  children?: React.ReactNode
+}
 
 const Recommendations: React.FC<RecommendationsProps> = () => {
   return (
@@ -13,6 +17,7 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
             View All Recommendadion <i className="icon-long-arrow-right" />
           </a>
         </div>
+
       </div>
 
       <div className="products">
@@ -20,9 +25,7 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
           <div className="col-6 col-md-4 col-lg-3">
             <div className="product product-2">
               <figure className="product-media">
-                <span className="product-label label-circle label-sale">
-                  Sale
-                </span>
+                <span className="product-label label-circle label-sale">Sale</span>
                 <a href="product.html">
                   <img
                     src="assets/images/demos/demo-4/products/product-10.jpg"
@@ -35,28 +38,17 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
                   <a
                     href="!#"
                     className="btn-product-icon btn-wishlist"
-                    title="Add to wishlist"
-                  >
-                    &nbsp;
-                  </a>
+                    title="Add to wishlist">&nbsp;</a>
                 </div>
                 {/* <!-- End .product-action --> */}
 
                 <div className="product-action">
-                  <a
-                    href="!#"
-                    className="btn-product btn-cart"
-                    title="Add to cart"
-                  >
-                    <span>add to cart</span>
-                  </a>
+                  <a href="!#" className="btn-product btn-cart" title="Add to cart"
+                  ><span>add to cart</span></a>
                   <a
                     href="popup/quickView.html"
                     className="btn-product btn-quickview"
-                    title="Quick view"
-                  >
-                    <span>quick view</span>
-                  </a>
+                    title="Quick view"><span>quick view</span></a>
                 </div>
                 {/* <!-- End .product-action --> */}
               </figure>
@@ -67,9 +59,7 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
                 </div>
                 {/* <!-- End .product-cat --> */}
                 <h3 className="product-title">
-                  <a href="product.html">
-                    Beats by Dr. Dre Wireless Headphones
-                  </a>
+                  <a href="product.html">Beats by Dr. Dre Wireless Headphones</a>
                 </h3>
                 {/* <!-- End .product-title --> */}
                 <div className="product-price">
@@ -79,7 +69,7 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
                 {/* <!-- End .product-price --> */}
                 <div className="ratings-container">
                   <div className="ratings">
-                    <div className="ratings-val" style={{ width: "40%" }} />
+                    <div className="ratings-val" style={{ width: '40%' }} />
                     {/* <!-- End .ratings-val --> */}
                   </div>
                   {/* <!-- End .ratings --> */}
@@ -88,25 +78,16 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
                 {/* <!-- End .rating-container --> */}
 
                 <div className="product-nav product-nav-dots">
-                  <a
-                    href="!#"
-                    className="active"
-                    style={{ background: "#666666" }}
-                  >
-                    <span className="sr-only">Color name</span>
-                  </a>
-                  <a href="!#" style={{ background: "#ff887f" }}>
-                    <span className="sr-only">Color name</span>
-                  </a>
-                  <a href="!#" style={{ background: "#6699cc" }}>
-                    <span className="sr-only">Color name</span>
-                  </a>
-                  <a href="!#" style={{ background: "#f3dbc1" }}>
-                    <span className="sr-only">Color name</span>
-                  </a>
-                  <a href="!#" style={{ background: "#eaeaec" }}>
-                    <span className="sr-only">Color name</span>
-                  </a>
+                  <a href="!#" className="active" style={{ background: '#666666' }}
+                  ><span className="sr-only">Color name</span></a>
+                  <a href="!#" style={{ background: '#ff887f' }}
+                  ><span className="sr-only">Color name</span></a>
+                  <a href="!#" style={{ background: '#6699cc' }}
+                  ><span className="sr-only">Color name</span></a>
+                  <a href="!#" style={{ background: '#f3dbc1' }}
+                  ><span className="sr-only">Color name</span></a>
+                  <a href="!#" style={{ background: '#eaeaec' }}
+                  ><span className="sr-only">Color name</span></a>
                 </div>
                 {/* <!-- End .product-nav --> */}
               </div>
@@ -128,28 +109,17 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
                   <a
                     href="!#"
                     className="btn-product-icon btn-wishlist"
-                    title="Add to wishlist"
-                  >
-                    &nbsp;
-                  </a>
+                    title="Add to wishlist">&nbsp;</a>
                 </div>
                 {/* <!-- End .product-action --> */}
 
                 <div className="product-action">
-                  <a
-                    href="!#"
-                    className="btn-product btn-cart"
-                    title="Add to cart"
-                  >
-                    <span>add to cart</span>
-                  </a>
+                  <a href="!#" className="btn-product btn-cart" title="Add to cart"
+                  ><span>add to cart</span></a>
                   <a
                     href="popup/quickView.html"
                     className="btn-product btn-quickview"
-                    title="Quick view"
-                  >
-                    <span>quick view</span>
-                  </a>
+                    title="Quick view"><span>quick view</span></a>
                 </div>
                 {/* <!-- End .product-action --> */}
               </figure>
@@ -161,16 +131,14 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
                 </div>
                 {/* <!-- End .product-cat --> */}
                 <h3 className="product-title">
-                  <a href="product.html">
-                    GoPro - HERO7 Black HD Waterproof Action
-                  </a>
+                  <a href="product.html">GoPro - HERO7 Black HD Waterproof Action</a>
                 </h3>
                 {/* <!-- End .product-title --> */}
                 <div className="product-price">$349.99</div>
                 {/* <!-- End .product-price --> */}
                 <div className="ratings-container">
                   <div className="ratings">
-                    <div className="ratings-val" style={{ width: "60%" }} />
+                    <div className="ratings-val" style={{ width: '60%' }} />
                     {/* <!-- End .ratings-val --> */}
                   </div>
                   {/* <!-- End .ratings --> */}
