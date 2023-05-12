@@ -12,6 +12,10 @@ import {
   Recommendations,
 } from './components/components';
 
+// import '../../public/assets/css/skins/skin-demo-4.css';
+// import '../../public/assets/css/demos/demo-4.css';
+// import '../../public/assets/js/demos/demo-4.js';
+
 const Home = () => {
   return (
     <Layout>

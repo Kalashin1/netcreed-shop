@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface SignInModalProps {
-  children?: React.ReactNode
+  children?: React.ReactNode;
 }
 
 const SignInModal: React.FC<SignInModalProps> = () => {

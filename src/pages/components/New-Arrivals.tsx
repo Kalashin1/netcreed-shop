@@ -450,7 +450,9 @@ const NewArrivals = () => {
                   <a href="!#">TV & Home Theater</a>
                 </div>
                 <h3 className="product-title">
-                  <a href="product.html">Samsung - 55&rdquo; Class LED 2160p Smart</a>
+                  <a href="product.html">
+                    Samsung - 55&rdquo; Class LED 2160p Smart
+                  </a>
                 </h3>
                 <div className="product-price">$899.99</div>
                 <div className="ratings-container">

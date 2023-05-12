@@ -829,7 +829,9 @@ const TrendingProducts = () => {
                         <a href="!#">Laptops</a>
                       </div>
                       <h3 className="product-title">
-                        <a href="product.html">MacBook Pro 13&rdquo; Display, i5</a>
+                        <a href="product.html">
+                          MacBook Pro 13&rdquo; Display, i5
+                        </a>
                       </h3>
                       <div className="product-price">$1,199.99</div>
                       <div className="ratings-container">

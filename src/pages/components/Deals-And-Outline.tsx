@@ -14,7 +14,7 @@ const DealsAndOutline = () => {
             className="deal"
             style={{
               backgroundImage:
-                'url(\'assets/images/demos/demo-4/deal/bg-1.jpg\')',
+                "url('assets/images/demos/demo-4/deal/bg-1.jpg')",
             }}
           >
             <div className="deal-top">
@@ -54,7 +54,7 @@ const DealsAndOutline = () => {
             className="deal"
             style={{
               backgroundImage:
-                'url(\'assets/images/demos/demo-4/deal/bg-2.jpg\')',
+                "url('assets/images/demos/demo-4/deal/bg-2.jpg')",
             }}
           >
             <div className="deal-top">
