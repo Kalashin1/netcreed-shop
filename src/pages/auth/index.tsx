@@ -1,11 +1,11 @@
 import React from 'react';
 import Layout from '../product/Layout';
-import LoginForm from './components/Login-Form';
+import AuthTab from './components/Auth-Tab';
 
 const AuthPage = () => {
   return (
     <Layout>
-      <LoginForm />
+      <AuthTab />
     </Layout>
   );
 };

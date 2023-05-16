@@ -9,9 +9,21 @@ import Footer from '../product/components/Footer';
 
 interface LayoutProps {
   children: React.ReactNode;
+  pageHeaderTitle?: string;
+  pageHeaderSub?: string;
+  breadCrumbFirstLevel?: string;
+  breadCrumbSecondLevel: string;
+  breadCrumbThirdLevel?: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = ({ 
+  children,
+  pageHeaderTitle,
+  pageHeaderSub,
+  breadCrumbFirstLevel,
+  breadCrumbSecondLevel,
+  breadCrumbThirdLevel,
+}) => {
   return (
     <div className="page-wrapper">
       <header className="header">
@@ -19,8 +31,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <HeaderMiddle />
       </header>
       <main className="main">
-        <PageHeader />
-        <BreadCrumb />
+        <PageHeader title={pageHeaderTitle} subTitle={pageHeaderSub}  />
+        <BreadCrumb firstLevel={breadCrumbFirstLevel} secondLevel={breadCrumbSecondLevel} thirdLevel={breadCrumbThirdLevel} />
         <div className="page-content">{children}</div>
         <Footer></Footer>
       </main>

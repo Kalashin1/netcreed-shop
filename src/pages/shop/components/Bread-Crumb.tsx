@@ -1,19 +1,37 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const BreadCrumb = () => {
+interface BreadCrumbProps {
+  firstLevel?: string;
+  secondLevel: string;
+  thirdLevel?: string;
+}
+
+const BreadCrumb: React.FC<BreadCrumbProps> = ({
+  firstLevel = 'Home',
+  secondLevel,
+  thirdLevel,
+}) => {
+  const goto = useNavigate();
+
   return (
     <nav aria-label="breadcrumb" className="breadcrumb-nav mb-2">
       <div className="container">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
-            <a href="index.html">Home</a>
+            <span style={{ cursor: 'pointer' }} onClick={() => goto('/')}>{firstLevel}</span>
           </li>
           <li className="breadcrumb-item">
-            <a href="!#">Shop</a>
+            <span style={{ cursor: 'pointer' }} onClick={() => goto(`/${secondLevel.toLowerCase()}`)}>{ secondLevel }</span>
           </li>
-          <li className="breadcrumb-item active" aria-current="page">
-            Grid 4 Columns
-          </li>
+          {thirdLevel ? (
+            <li className="breadcrumb-item active" aria-current="page">
+              {thirdLevel}
+            </li>
+          ) : (
+            <span></span>
+          )
+          }
         </ol>
       </div>
       {/* <!-- End .container --> */}
