@@ -9,6 +9,8 @@ import Cart from './pages/cart';
 import WishList from './pages/wishlist';
 import Checkout from './pages/checkout';
 import Dashboard from './pages/dashboard';
+import Category from './pages/product/category';
+import Order from './pages/order/';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/wishlist" element={<WishList />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path='/category' element={<Category />} />
+        <Route path='/order' element={<Order />} />
       </Routes>
     </BrowserRouter>
   );
