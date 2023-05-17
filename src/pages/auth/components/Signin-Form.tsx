@@ -16,9 +16,11 @@ const SigninForm = () => {
   const login = async (e: React.FormEvent, email: string, password: string) => {
     e.preventDefault();
     updateEmailError(false);
+    updatePasswordError(false);
     const [user, error] = await signIn({ email, password });
     if (error) {
       if (error.includes('user-not-found')) updateEmailError(true);
+      if (error.includes('auth/wrong-password')) updatePasswordError(true);
       console.log(error);
     } else if (user) {
       localStorage.setItem('userId', user?.uid);
@@ -76,7 +78,7 @@ const SigninForm = () => {
               required
             />
           )}
-          {(passwordError ? (<small className='text-danger'>weak password, less than 8 characters</small>) : (<></>))}
+          {(passwordError ? (<small className='text-danger'>Incorrect password</small>) : (<></>))}
           <small>{showPassword ? (
             <div style={{ cursor: 'pointer' }} onClick={() => toggleShowPassword(false)}>Hide Password</div>) :
             (<div style={{ cursor: 'pointer' }} onClick={() => toggleShowPassword(true)}>Show Password</div>)}</small>

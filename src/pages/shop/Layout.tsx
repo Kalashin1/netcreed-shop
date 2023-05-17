@@ -6,6 +6,11 @@ import {
   PageHeader,
 } from './components/components';
 import Footer from '../product/components/Footer';
+import {
+  MobileMenu,
+  NewsLetter,
+  SignInModal,
+} from '../components/components';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -16,7 +21,7 @@ interface LayoutProps {
   breadCrumbThirdLevel?: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ 
+const Layout: React.FC<LayoutProps> = ({
   children,
   pageHeaderTitle,
   pageHeaderSub,
@@ -31,11 +36,19 @@ const Layout: React.FC<LayoutProps> = ({
         <HeaderMiddle />
       </header>
       <main className="main">
-        <PageHeader title={pageHeaderTitle} subTitle={pageHeaderSub}  />
+        <PageHeader title={pageHeaderTitle} subTitle={pageHeaderSub} />
         <BreadCrumb firstLevel={breadCrumbFirstLevel} secondLevel={breadCrumbSecondLevel} thirdLevel={breadCrumbThirdLevel} />
         <div className="page-content">{children}</div>
-        <Footer></Footer>
       </main>
+      <Footer></Footer>
+      <button id="scroll-top" title="Back to Top">
+        <i className="icon-arrow-up" />
+      </button>
+      <div className="mobile-menu-overlay">
+        <MobileMenu></MobileMenu>
+      </div>
+      <SignInModal></SignInModal>
+      <NewsLetter></NewsLetter>
     </div>
   );
 };

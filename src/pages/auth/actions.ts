@@ -7,6 +7,7 @@ import {
   User,
 } from 'firebase/auth';
 import { setDoc, doc } from 'firebase/firestore';
+import { updateUserProfile } from '../dashboard/actions';
 
 interface SigninParams {
   email: string;
@@ -45,6 +46,7 @@ Promise<[User|null, string | null]> => {
       await updateProfile(auth.currentUser, {
         displayName: fullName,
       });
+      await updateUserProfile(fullName, '');
     }
     return [user, null];
   } catch (error: any) {

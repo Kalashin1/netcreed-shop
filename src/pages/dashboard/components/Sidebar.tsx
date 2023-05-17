@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Sidebar: React.FC = () => {
+  const goto = useNavigate();
   return (
     <aside className="col-md-4 col-lg-3">
       <ul
@@ -34,17 +36,18 @@ const Sidebar: React.FC = () => {
           </a>
         </li>
         <li className="nav-item">
-          <a
+          <span
             className="nav-link"
             id="tab-downloads-link"
             data-toggle="tab"
-            href="#tab-downloads"
             role="tab"
+            onClick={e => goto('/shop')}
+            style={{ cursor: 'pointer'}}
             aria-controls="tab-downloads"
             aria-selected="false"
           >
-            Downloads
-          </a>
+            Shop
+          </span>
         </li>
         <li className="nav-item">
           <a

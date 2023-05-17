@@ -1,9 +1,30 @@
 import React from 'react';
 import { AuthContext } from '../../../App';
+import Profile from './Profile';
+import { getAuth, signOut } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
+import { auth } from '../../../firebase-settings';
 
 
 const Home: React.FC = () => {
-  const { user } = React.useContext(AuthContext);
+  const { user, getLoggedInUser } = React.useContext(AuthContext);
+  const goto = useNavigate();
+
+  React.useEffect(() => {
+    if (!user && getLoggedInUser) {
+      getLoggedInUser();
+    }
+  }, []);
+
+  const logout = () => {
+    signOut(auth).then(() => {
+      goto('/auth');
+    });
+  };
+
+
+  const auth = getAuth();
+
   return (
     <div
       className="tab-pane fade show active"
@@ -13,28 +34,14 @@ const Home: React.FC = () => {
     >
       <p>
         Hello{' '}
-        <span className="font-weight-normal text-dark">{ user ? user?.displayName?.slice(0, user.displayName?.indexOf(' ')): ''}</span>{' '}
+        <span className="font-weight-normal text-dark">{user ? user?.displayName?.slice(0, user.displayName?.indexOf(' ')) : ''}</span>{' '}
         (not{' '}
-        <span className="font-weight-normal text-dark">{ user ? user?.displayName?.slice(0, user.displayName?.indexOf(' ')): ''}</span>?{' '}
-        <a href="#">Log out</a>)
+        <span className="font-weight-normal text-dark">{user ? user?.displayName?.slice(0, user.displayName?.indexOf(' ')) : ''}</span>?{' '}
+        <span onClick={logout} style={{ cursor: 'pointer', color: 'lightblue'}}>Log out</span>)
         <br />
         From your account dashboard you can view your{' '}
-        <a
-          href="#tab-orders"
-          className="tab-trigger-link link-underline"
-        >
-          recent orders
-        </a>
-        , manage your{' '}
-        <a href="#tab-address" className="tab-trigger-link">
-          shipping and billing addresses
-        </a>
-        , and{' '}
-        <a href="#tab-account" className="tab-trigger-link">
-          edit your password and account details
-        </a>
-        .
       </p>
+      <Profile />
     </div>
   );
 };

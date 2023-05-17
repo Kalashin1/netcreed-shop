@@ -69,355 +69,6 @@ const HeaderBottom = () => {
                   Home
                 </a>
 
-                <div className="megamenu demo">
-                  <div className="menu-col">
-                    <div className="menu-title">Choose your demo</div>
-
-                    <div className="demo-list">
-                      <div className="demo-item">
-                        <a href="index-1.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/1.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">
-                            01 - furniture store
-                          </span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item">
-                        <a href="index-2.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/2.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">
-                            02 - furniture store
-                          </span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item">
-                        <a href="index-3.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/3.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">
-                            03 - electronic store
-                          </span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item">
-                        <a href="index-4.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/4.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">
-                            04 - electronic store
-                          </span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item">
-                        <a href="index-5.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/5.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">05 - fashion store</span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item">
-                        <a href="index-6.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/6.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">06 - fashion store</span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item">
-                        <a href="index-7.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/7.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">07 - fashion store</span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item">
-                        <a href="index-8.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/8.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">08 - fashion store</span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item">
-                        <a href="index-9.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/9.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">09 - fashion store</span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item">
-                        <a href="index-10.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/10.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">10 - shoes store</span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item hidden">
-                        <a href="index-11.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/11.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">
-                            11 - furniture simple store
-                          </span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item hidden">
-                        <a href="index-12.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/12.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">
-                            12 - fashion simple store
-                          </span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item hidden">
-                        <a href="index-13.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/13.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">13 - market</span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item hidden">
-                        <a href="index-14.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/14.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">
-                            14 - market fullwidth
-                          </span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item hidden">
-                        <a href="index-15.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/15.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">15 - lookbook 1</span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item hidden">
-                        <a href="index-16.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/16.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">16 - lookbook 2</span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item hidden">
-                        <a href="index-17.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/17.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">17 - fashion store</span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item hidden">
-                        <a href="index-18.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/18.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">
-                            18 - fashion store (with sidebar)
-                          </span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item hidden">
-                        <a href="index-19.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/19.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">19 - games store</span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item hidden">
-                        <a href="index-20.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/20.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">20 - book store</span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item hidden">
-                        <a href="index-21.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/21.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">21 - sport store</span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item hidden">
-                        <a href="index-22.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/22.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">22 - tools store</span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item hidden">
-                        <a href="index-23.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/23.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">
-                            23 - fashion left navigation store
-                          </span>
-                        </a>
-                      </div>
-
-                      <div className="demo-item hidden">
-                        <a href="index-24.html">
-                          <span
-                            className="demo-bg"
-                            style={{
-                              backgroundImage:
-                                'url(assets/images/menu/demos/24.jpg)',
-                            }}
-                          ></span>
-                          <span className="demo-title">
-                            24 - extreme sport store
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div className="megamenu-action text-center">
-                      <a
-                        href="!#"
-                        className="btn btn-outline-primary-2 view-all-demos"
-                      >
-                        <span>View All Demos</span>
-                        <i className="icon-long-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
               </li>
               <li>
                 <a href="category.html" className="sf-with-ul">
@@ -430,85 +81,85 @@ const HeaderBottom = () => {
                       <div className="menu-col">
                         <div className="row">
                           <div className="col-md-6">
-                            <div className="menu-title">Shop with sidebar</div>
+                            <div className="menu-title">Smart Phones</div>
                             <ul>
                               <li>
-                                <a href="category-list.html">Shop List</a>
+                                <a href="category-list.html">Apple</a>
                               </li>
                               <li>
                                 <a href="category-2cols.html">
-                                  Shop Grid 2 Columns
+                                  Samsung
                                 </a>
                               </li>
                               <li>
-                                <a href="category.html">Shop Grid 3 Columns</a>
+                                <a href="category.html">Redmi</a>
                               </li>
                               <li>
                                 <a href="category-4cols.html">
-                                  Shop Grid 4 Columns
+                                  Google
                                 </a>
                               </li>
                               <li>
                                 <a href="category-market.html">
                                   <span>
-                                    Shop Market
+                                    Oppo
                                     <span className="tip tip-new">New</span>
                                   </span>
                                 </a>
                               </li>
                             </ul>
 
-                            <div className="menu-title">Shop no sidebar</div>
+                            <div className="menu-title">Smart Watches</div>
                             <ul>
                               <li>
                                 <a href="category-boxed.html">
                                   <span>
-                                    Shop Boxed No Sidebar
+                                    Apple
                                     <span className="tip tip-hot">Hot</span>
                                   </span>
                                 </a>
                               </li>
                               <li>
                                 <a href="category-fullwidth.html">
-                                  Shop Fullwidth No Sidebar
+                                  Samsung
                                 </a>
                               </li>
                             </ul>
                           </div>
 
                           <div className="col-md-6">
-                            <div className="menu-title">Product Category</div>
+                            <div className="menu-title">Mouse</div>
                             <ul>
                               <li>
                                 <a href="product-category-boxed.html">
-                                  Product Category Boxed
+                                  Apple
                                 </a>
                               </li>
                               <li>
                                 <a href="product-category-fullwidth.html">
                                   <span>
-                                    Product Category Fullwidth
+                                    Qwerty
                                     <span className="tip tip-new">New</span>
                                   </span>
                                 </a>
                               </li>
                             </ul>
-                            <div className="menu-title">Shop Pages</div>
+                            <div className="menu-title">Laptops</div>
                             <ul>
                               <li>
-                                <a href="cart.html">Cart</a>
+                                <a href="cart.html">Apple</a>
                               </li>
                               <li>
-                                <a href="checkout.html">Checkout</a>
+                                <a href="checkout.html">Lenovo</a>
                               </li>
                               <li>
-                                <a href="wishlist.html">Wishlist</a>
+                                <a href="wishlist.html">HP</a>
                               </li>
                               <li>
-                                <a href="dashboard.html">My Account</a>
+                                <a href="dashboard.html">Dell</a>
                               </li>
                               <li>
-                                <a href="!#">Lookbook</a>
+                                <a href="!#">Samsung</a>
                               </li>
                             </ul>
                           </div>
@@ -542,46 +193,46 @@ const HeaderBottom = () => {
               </li>
               <li>
                 <a href="product.html" className="sf-with-ul">
-                  Product
+                  Phones
                 </a>
 
                 <div className="megamenu megamenu-sm">
                   <div className="row no-gutters">
                     <div className="col-md-6">
                       <div className="menu-col">
-                        <div className="menu-title">Product Details</div>
+                        <div className="menu-title">Apple</div>
                         <ul>
                           <li>
-                            <a href="product.html">Default</a>
+                            <a href="product.html">Samsung</a>
                           </li>
                           <li>
-                            <a href="product-centered.html">Centered</a>
+                            <a href="product-centered.html">Xiomi</a>
                           </li>
                           <li>
                             <a href="product-extended.html">
                               <span>
-                                Extended Info
+                                Infinix
                                 <span className="tip tip-new">New</span>
                               </span>
                             </a>
                           </li>
                           <li>
-                            <a href="product-gallery.html">Gallery</a>
+                            <a href="product-gallery.html">Tecno</a>
                           </li>
                           <li>
-                            <a href="product-sticky.html">Sticky Info</a>
+                            <a href="product-sticky.html">Google</a>
                           </li>
                           <li>
                             <a href="product-sidebar.html">
-                              Boxed With Sidebar
+                              Oppo
                             </a>
                           </li>
                           <li>
-                            <a href="product-fullwidth.html">Full Width</a>
+                            <a href="product-fullwidth.html">Itel</a>
                           </li>
                           <li>
                             <a href="product-masonry.html">
-                              Masonry Sticky Info
+                              Huawei
                             </a>
                           </li>
                         </ul>
@@ -613,122 +264,78 @@ const HeaderBottom = () => {
               </li>
               <li>
                 <a href="!#" className="sf-with-ul">
-                  Pages
+                  Laptops
                 </a>
 
                 <ul>
                   <li>
                     <a href="about.html" className="sf-with-ul">
-                      About
+                      Apple
                     </a>
 
                     <ul>
                       <li>
-                        <a href="about.html">About 01</a>
+                        <a href="about.html">MacBook Pro</a>
                       </li>
                       <li>
-                        <a href="about-2.html">About 02</a>
+                        <a href="about-2.html">MacBook Air</a>
                       </li>
                     </ul>
                   </li>
                   <li>
                     <a href="contact.html" className="sf-with-ul">
-                      Contact
+                      HP
                     </a>
 
                     <ul>
                       <li>
-                        <a href="contact.html">Contact 01</a>
+                        <a href="contact.html">Pavallion</a>
                       </li>
                       <li>
-                        <a href="contact-2.html">Contact 02</a>
+                        <a href="contact-2.html">NoteBook</a>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a href="login.html">Login</a>
+                    <a href="login.html">Lenovo</a>
                   </li>
                   <li>
-                    <a href="faq.html">FAQs</a>
+                    <a href="faq.html">Dell</a>
                   </li>
                   <li>
-                    <a href="404.html">Error 404</a>
+                    <a href="404.html">Samsung</a>
                   </li>
                   <li>
-                    <a href="coming-soon.html">Coming Soon</a>
+                    <a href="coming-soon.html">Google</a>
                   </li>
                 </ul>
               </li>
               <li>
                 <a href="blog.html" className="sf-with-ul">
-                  Blog
+                  Watches
                 </a>
 
                 <ul>
                   <li>
-                    <a href="blog.html">ClassNameic</a>
+                    <a href="blog.html">Apple</a>
                   </li>
                   <li>
-                    <a href="blog-listing.html">Listing</a>
+                    <a href="blog-listing.html">Samsung</a>
                   </li>
                   <li>
-                    <a href="!#">Grid</a>
+                    <a href="!#">Redmi</a>
                     <ul>
                       <li>
-                        <a href="blog-grid-2cols.html">Grid 2 columns</a>
+                        <a href="blog-grid-2cols.html">Huawei</a>
                       </li>
                       <li>
-                        <a href="blog-grid-3cols.html">Grid 3 columns</a>
+                        <a href="blog-grid-3cols.html">Oppo</a>
                       </li>
                       <li>
-                        <a href="blog-grid-4cols.html">Grid 4 columns</a>
+                        <a href="blog-grid-4cols.html">Nike</a>
                       </li>
                       <li>
-                        <a href="blog-grid-sidebar.html">Grid sidebar</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="!#">Masonry</a>
-                    <ul>
-                      <li>
-                        <a href="blog-masonry-2cols.html">Masonry 2 columns</a>
-                      </li>
-                      <li>
-                        <a href="blog-masonry-3cols.html">Masonry 3 columns</a>
-                      </li>
-                      <li>
-                        <a href="blog-masonry-4cols.html">Masonry 4 columns</a>
-                      </li>
-                      <li>
-                        <a href="blog-masonry-sidebar.html">Masonry sidebar</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="!#">Mask</a>
-                    <ul>
-                      <li>
-                        <a href="blog-mask-grid.html">Blog mask grid</a>
-                      </li>
-                      <li>
-                        <a href="blog-mask-masonry.html">Blog mask masonry</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="!#">Single Post</a>
-                    <ul>
-                      <li>
-                        <a href="single.html">Default with sidebar</a>
-                      </li>
-                      <li>
-                        <a href="single-fullwidth.html">Fullwidth no sidebar</a>
-                      </li>
-                      <li>
-                        <a href="single-fullwidth-sidebar.html">
-                          Fullwidth with sidebar
-                        </a>
+                        <a href="blog-grid-sidebar.html">Adidas</a>
                       </li>
                     </ul>
                   </li>
@@ -736,29 +343,29 @@ const HeaderBottom = () => {
               </li>
               <li>
                 <a href="elements-list.html" className="sf-with-ul">
-                  Elements
+                  Keyboard
                 </a>
 
                 <ul>
                   <li>
-                    <a href="elements-products.html">Products</a>
+                    <a href="elements-products.html">HP</a>
                   </li>
                   <li>
-                    <a href="elements-typography.html">Typography</a>
+                    <a href="elements-typography.html">Dell</a>
                   </li>
                   <li>
-                    <a href="elements-titles.html">Titles</a>
+                    <a href="elements-titles.html">IBM</a>
                   </li>
                   <li>
-                    <a href="elements-banners.html">Banners</a>
+                    <a href="elements-banners.html">Intel</a>
                   </li>
                   <li>
                     <a href="elements-product-category.html">
-                      Product Category
+                      Redhat
                     </a>
                   </li>
                   <li>
-                    <a href="elements-video-banners.html">Video Banners</a>
+                    <a href="elements-video-banners.html">Youtube</a>
                   </li>
                   <li>
                     <a href="elements-buttons.html">Buttons</a>
