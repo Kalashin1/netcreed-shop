@@ -1,6 +1,22 @@
 import React from 'react';
 
 const ColorFilter = () => {
+
+  const [activeColor, setActiveColor] = React.useState('#3399cc');
+
+  const colors = ['#b87145', '#f0c04a', '#333333', '#cc3333', '#3399cc', '#669933', '#f2719c', '#ebebeb'];
+
+  const FilterItem = ({ color }: { color: string }) => {
+    return (
+      <a href="" onClick={(e) => {
+        e.preventDefault();
+        setActiveColor(color);
+      }} className={color === activeColor ? 'selected' : ''} style={{ background: color }}>
+        <span className="sr-only">Color Name</span>
+      </a>
+    );
+  };
+
   return (
     <div className="widget widget-collapsible">
       <h3 className="widget-title">
@@ -19,30 +35,9 @@ const ColorFilter = () => {
       <div className="collapse show" id="widget-3">
         <div className="widget-body">
           <div className="filter-colors">
-            <a href="!#" style={{ background: '#b87145' }}>
-              <span className="sr-only">Color Name</span>
-            </a>
-            <a href="!#" style={{ background: '#f0c04a' }}>
-              <span className="sr-only">Color Name</span>
-            </a>
-            <a href="!#" style={{ background: '#333333' }}>
-              <span className="sr-only">Color Name</span>
-            </a>
-            <a href="!#" className="selected" style={{ background: '#cc3333' }}>
-              <span className="sr-only">Color Name</span>
-            </a>
-            <a href="!#" style={{ background: '#3399cc' }}>
-              <span className="sr-only">Color Name</span>
-            </a>
-            <a href="!#" style={{ background: '#669933' }}>
-              <span className="sr-only">Color Name</span>
-            </a>
-            <a href="!#" style={{ background: '#f2719c' }}>
-              <span className="sr-only">Color Name</span>
-            </a>
-            <a href="!#" style={{ background: '#ebebeb' }}>
-              <span className="sr-only">Color Name</span>
-            </a>
+            {colors && colors.map((c) => (
+              <FilterItem color={c} key={c} />
+            ))}
           </div>
           {/* <!-- End .filter-colors --> */}
         </div>

@@ -30,26 +30,27 @@ const Layout: React.FC<LayoutProps> = ({
   breadCrumbThirdLevel,
 }) => {
   return (
-    <div className="page-wrapper">
-      <header className="header">
-        <HeaderTop />
-        <HeaderMiddle />
-      </header>
-      <main className="main">
-        <PageHeader title={pageHeaderTitle} subTitle={pageHeaderSub} />
-        <BreadCrumb firstLevel={breadCrumbFirstLevel} secondLevel={breadCrumbSecondLevel} thirdLevel={breadCrumbThirdLevel} />
-        <div className="page-content">{children}</div>
-      </main>
-      <Footer></Footer>
+    <>
+      <div className="page-wrapper">
+        <header className="header">
+          <HeaderTop />
+          <HeaderMiddle />
+        </header>
+        <main className="main">
+          <PageHeader title={pageHeaderTitle} subTitle={pageHeaderSub} />
+          <BreadCrumb firstLevel={breadCrumbFirstLevel} secondLevel={breadCrumbSecondLevel} thirdLevel={breadCrumbThirdLevel} />
+          <div className="page-content">{children}</div>
+        </main>
+        <Footer></Footer>
+      </div>
       <button id="scroll-top" title="Back to Top">
         <i className="icon-arrow-up" />
       </button>
-      <div className="mobile-menu-overlay">
-        <MobileMenu></MobileMenu>
-      </div>
+      <div className="mobile-menu-overlay"></div>
+      <MobileMenu></MobileMenu>
       <SignInModal></SignInModal>
       <NewsLetter></NewsLetter>
-    </div>
+    </>
   );
 };
 

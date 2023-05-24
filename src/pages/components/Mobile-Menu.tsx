@@ -65,123 +65,44 @@ const MobileMenu = () => {
               <ul className="mobile-menu">
                 <li className="active">
                   <a href="index.html">Home</a>
-
-                  <ul>
-                    <li>
-                      <a href="index-1.html">01 - furniture store</a>
-                    </li>
-                    <li>
-                      <a href="index-2.html">02 - furniture store</a>
-                    </li>
-                    <li>
-                      <a href="index-3.html">03 - electronic store</a>
-                    </li>
-                    <li>
-                      <a href="index-4.html">04 - electronic store</a>
-                    </li>
-                    <li>
-                      <a href="index-5.html">05 - fashion store</a>
-                    </li>
-                    <li>
-                      <a href="index-6.html">06 - fashion store</a>
-                    </li>
-                    <li>
-                      <a href="index-7.html">07 - fashion store</a>
-                    </li>
-                    <li>
-                      <a href="index-8.html">08 - fashion store</a>
-                    </li>
-                    <li>
-                      <a href="index-9.html">09 - fashion store</a>
-                    </li>
-                    <li>
-                      <a href="index-10.html">10 - shoes store</a>
-                    </li>
-                    <li>
-                      <a href="index-11.html">11 - furniture simple store</a>
-                    </li>
-                    <li>
-                      <a href="index-12.html">12 - fashion simple store</a>
-                    </li>
-                    <li>
-                      <a href="index-13.html">13 - market</a>
-                    </li>
-                    <li>
-                      <a href="index-14.html">14 - market full width</a>
-                    </li>
-                    <li>
-                      <a href="index-15.html">15 - look book 1</a>
-                    </li>
-                    <li>
-                      <a href="index-16.html">16 - look book 2</a>
-                    </li>
-                    <li>
-                      <a href="index-17.html">17 - fashion store</a>
-                    </li>
-                    <li>
-                      <a href="index-18.html">
-                        18 - fashion store (with sidebar)
-                      </a>
-                    </li>
-                    <li>
-                      <a href="index-19.html">19 - games store</a>
-                    </li>
-                    <li>
-                      <a href="index-20.html">20 - book store</a>
-                    </li>
-                    <li>
-                      <a href="index-21.html">21 - sport store</a>
-                    </li>
-                    <li>
-                      <a href="index-22.html">22 - tools store</a>
-                    </li>
-                    <li>
-                      <a href="index-23.html">
-                        23 - fashion left navigation store
-                      </a>
-                    </li>
-                    <li>
-                      <a href="index-24.html">24 - extreme sport store</a>
-                    </li>
-                  </ul>
                 </li>
                 <li>
                   <a href="category.html">Shop</a>
                   <ul>
                     <li>
-                      <a href="category-list.html">Shop List</a>
+                      <a href="category-list.html">Smart Phones</a>
                     </li>
                     <li>
-                      <a href="category-2cols.html">Shop Grid 2 Columns</a>
+                      <a href="category-2cols.html">Televisions</a>
                     </li>
                     <li>
-                      <a href="category.html">Shop Grid 3 Columns</a>
+                      <a href="category.html">Laptops</a>
                     </li>
                     <li>
-                      <a href="category-4cols.html">Shop Grid 4 Columns</a>
+                      <a href="category-4cols.html">Desktops</a>
                     </li>
                     <li>
                       <a href="category-boxed.html">
                         <span>
-                          Shop Boxed No Sidebar
+                          CPU
                           <span className="tip tip-hot">Hot</span>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="category-fullwidth.html">
-                        Shop Full width No Sidebar
+                        Storage
                       </a>
                     </li>
                     <li>
                       <a href="product-category-boxed.html">
-                        Product Category Boxed
+                        Sounds & Speakers
                       </a>
                     </li>
                     <li>
                       <a href="product-category-fullwidth.html">
                         <span>
-                          Product Category Full width
+                          Keyboards
                           <span className="tip tip-new">New</span>
                         </span>
                       </a>
@@ -202,86 +123,74 @@ const MobileMenu = () => {
                 </li>
                 <li>
                   <a href="product.html" className="sf-with-ul">
-                    Product
+                    Brands
                   </a>
                   <ul>
                     <li>
-                      <a href="product.html">Default</a>
+                      <a href="product.html">Apple</a>
                     </li>
                     <li>
-                      <a href="product-centered.html">Centered</a>
+                      <a href="product-centered.html">Samsung</a>
                     </li>
                     <li>
                       <a href="product-extended.html">
                         <span>
-                          Extended Info<span className="tip tip-new">New</span>
+                          Xoami<span className="tip tip-new">New</span>
                         </span>
                       </a>
                     </li>
                     <li>
-                      <a href="product-gallery.html">Gallery</a>
+                      <a href="product-gallery.html">Huawei</a>
                     </li>
                     <li>
-                      <a href="product-sticky.html">Sticky Info</a>
+                      <a href="product-sticky.html">Lenovo</a>
                     </li>
                     <li>
-                      <a href="product-sidebar.html">Boxed With Sidebar</a>
+                      <a href="product-sidebar.html">HP</a>
                     </li>
                     <li>
-                      <a href="product-fullwidth.html">Full Width</a>
+                      <a href="product-fullwidth.html">Dell</a>
                     </li>
                     <li>
-                      <a href="product-masonry.html">Masonry Sticky Info</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="!#">Pages</a>
-                  <ul>
-                    <li>
-                      <a href="about.html">About</a>
-
-                      <ul>
-                        <li>
-                          <a href="about.html">About 01</a>
-                        </li>
-                        <li>
-                          <a href="about-2.html">About 02</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact</a>
-
-                      <ul>
-                        <li>
-                          <a href="contact.html">Contact 01</a>
-                        </li>
-                        <li>
-                          <a href="contact-2.html">Contact 02</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="login.html">Login</a>
-                    </li>
-                    <li>
-                      <a href="faq.html">FAQs</a>
-                    </li>
-                    <li>
-                      <a href="404.html">Error 404</a>
-                    </li>
-                    <li>
-                      <a href="coming-soon.html">Coming Soon</a>
+                      <a href="product-masonry.html">Google</a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="blog.html">Blog</a>
+                  <a href="!#">Televisions</a>
+                  <ul>
+                    <li>
+                      <a href="about.html">Samsung</a>
+
+                      <ul>
+                        <li>
+                          <a href="about.html">LG</a>
+                        </li>
+                        <li>
+                          <a href="about-2.html">Toshiba</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="contact.html">Panasonic</a>
+
+                      <ul>
+                        <li>
+                          <a href="contact.html">Apple</a>
+                        </li>
+                        <li>
+                          <a href="contact-2.html">Hi-sense</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="blog.html">Profile</a>
 
                   <ul>
                     <li>
-                      <a href="blog.html">ClassNameic</a>
+                      <a href="blog.html">Orders</a>
                     </li>
                     <li>
                       <a href="blog-listing.html">Listing</a>

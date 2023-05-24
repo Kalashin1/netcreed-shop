@@ -14,15 +14,19 @@ import {
 
 const Shop = () => {
   return (
-    <Layout>
+    <Layout
+      pageHeaderTitle='Shop'
+      pageHeaderSub='Gadgets'
+      breadCrumbSecondLevel='Shop'
+    >
       <div className="container">
         <div className="row px-4">
-          <div className="col-lg-9">
+          <div className="col-lg-8">
             <ToolBox />
             <Products />
             <Pagination />
           </div>
-          <aside className="col-lg-3 order-lg-first">
+          <aside className="col-lg-4 order-lg-first">
             <div className="sidebar sidebar-shop" style={{ padding: '0 64px' }}>
               <FilterTitle />
               <CategoryFilter />

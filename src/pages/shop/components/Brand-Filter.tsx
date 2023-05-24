@@ -1,6 +1,34 @@
 import React from 'react';
 
+type FilterItemProps = {
+  brand: string;
+}
+
 const BrandFilter = () => {
+
+  const [activeBrand, setActiveBrand] = React.useState('Apple');
+  const brands = ['Apple', 'Samsung', 'Dell', 'HP', 'Lenovo', 'Acer', 'Toshiba', 'Google'];
+
+
+
+  const BrandFilter = ({ brand }: FilterItemProps) => {
+    return (
+      <div className="filter-item">
+        <div className="custom-control custom-checkbox">
+          <input
+            type="checkbox"
+            checked={brand === activeBrand}
+            className="custom-control-input"
+            id="brand-1"
+          />
+          <label onClick={() => setActiveBrand(brand)} className="custom-control-label" htmlFor="brand-1">
+            {brand}
+          </label>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="widget widget-collapsible">
       <h3 className="widget-title">
@@ -14,121 +42,16 @@ const BrandFilter = () => {
           Brand
         </a>
       </h3>
-      {/* <!-- End .widget-title --> */}
 
       <div className="collapse show" id="widget-4">
         <div className="widget-body">
           <div className="filter-items">
-            <div className="filter-item">
-              <div className="custom-control custom-checkbox">
-                <input
-                  type="checkbox"
-                  className="custom-control-input"
-                  id="brand-1"
-                />
-                <label className="custom-control-label" htmlFor="brand-1">
-                  Next
-                </label>
-              </div>
-              {/* <!-- End .custom-checkbox --> */}
-            </div>
-            {/* <!-- End .filter-item --> */}
-
-            <div className="filter-item">
-              <div className="custom-control custom-checkbox">
-                <input
-                  type="checkbox"
-                  className="custom-control-input"
-                  id="brand-2"
-                />
-                <label className="custom-control-label" htmlFor="brand-2">
-                  River Island
-                </label>
-              </div>
-              {/* <!-- End .custom-checkbox --> */}
-            </div>
-            {/* <!-- End .filter-item --> */}
-
-            <div className="filter-item">
-              <div className="custom-control custom-checkbox">
-                <input
-                  type="checkbox"
-                  className="custom-control-input"
-                  id="brand-3"
-                />
-                <label className="custom-control-label" htmlFor="brand-3">
-                  Geox
-                </label>
-              </div>
-              {/* <!-- End .custom-checkbox --> */}
-            </div>
-            {/* <!-- End .filter-item --> */}
-
-            <div className="filter-item">
-              <div className="custom-control custom-checkbox">
-                <input
-                  type="checkbox"
-                  className="custom-control-input"
-                  id="brand-4"
-                />
-                <label className="custom-control-label" htmlFor="brand-4">
-                  New Balance
-                </label>
-              </div>
-              {/* <!-- End .custom-checkbox --> */}
-            </div>
-            {/* <!-- End .filter-item --> */}
-
-            <div className="filter-item">
-              <div className="custom-control custom-checkbox">
-                <input
-                  type="checkbox"
-                  className="custom-control-input"
-                  id="brand-5"
-                />
-                <label className="custom-control-label" htmlFor="brand-5">
-                  UGG
-                </label>
-              </div>
-              {/* <!-- End .custom-checkbox --> */}
-            </div>
-            {/* <!-- End .filter-item --> */}
-
-            <div className="filter-item">
-              <div className="custom-control custom-checkbox">
-                <input
-                  type="checkbox"
-                  className="custom-control-input"
-                  id="brand-6"
-                />
-                <label className="custom-control-label" htmlFor="brand-6">
-                  F&F
-                </label>
-              </div>
-              {/* <!-- End .custom-checkbox --> */}
-            </div>
-            {/* <!-- End .filter-item --> */}
-
-            <div className="filter-item">
-              <div className="custom-control custom-checkbox">
-                <input
-                  type="checkbox"
-                  className="custom-control-input"
-                  id="brand-7"
-                />
-                <label className="custom-control-label" htmlFor="brand-7">
-                  Nike
-                </label>
-              </div>
-              {/* <!-- End .custom-checkbox --> */}
-            </div>
-            {/* <!-- End .filter-item --> */}
+            {brands && brands.map((b) => (
+              <BrandFilter key={b} brand={b} />
+            ))}
           </div>
-          {/* <!-- End .filter-items --> */}
         </div>
-        {/* <!-- End .widget-body --> */}
       </div>
-      {/** <!-- End .collapse --> **/}
     </div>
   );
 };

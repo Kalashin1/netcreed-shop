@@ -15,14 +15,18 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ children }) => {
   return (
-    <div className="page-wrapper">
-      <header className="header header-intro-clearance header-4">
-        <HeaderTop></HeaderTop>
-        <HeaderMiddle></HeaderMiddle>
-        <HeaderBottom></HeaderBottom>
-      </header>
-      <main className="main">{children}</main>
-      <Footer></Footer>
+    <>
+      <div className='page-wrapper'>
+        <header className="header header-intro-clearance header-4">
+          <HeaderTop></HeaderTop>
+          <HeaderMiddle></HeaderMiddle>
+          <HeaderBottom></HeaderBottom>
+        </header>
+        <main className="main">
+          {children}
+        </main>
+        <Footer></Footer>
+      </div>
       <button id="scroll-top" title="Back to Top">
         <i className="icon-arrow-up" />
       </button>
@@ -30,7 +34,7 @@ const Layout: React.FC<Props> = ({ children }) => {
       <MobileMenu></MobileMenu>
       <SignInModal></SignInModal>
       <NewsLetter></NewsLetter>
-    </div>
+    </>
   );
 };
 

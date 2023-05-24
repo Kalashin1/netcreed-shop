@@ -1,6 +1,63 @@
 import React from 'react';
 
-const ProductGallery = () => {
+interface ProductGalleryProps {
+  mainImage: string;
+  galleryImages: string[];
+}
+
+const images = [
+  {
+    image: 'assets/images/products/single/centered/1.jpg',
+    bigImage: 'assets/images/products/single/centered/1-big.jpg',
+    smallImage: 'assets/images/products/single/centered/1-small.jpg',
+  },
+  {
+    image: 'assets/images/products/single/centered/2.jpg',
+    bigImage: 'assets/images/products/single/centered/2-big.jpg',
+    smallImage: 'assets/images/products/single/centered/2-small.jpg'
+  },
+  {
+    image: 'assets/images/products/single/centered/3.jpg',
+    bigImage: 'assets/images/products/single/centered/3-big.jpg',
+    smallImage: 'assets/images/products/single/centered/3-small.jpg'
+  },
+  {
+    image: 'assets/images/products/single/centered/4.jpg',
+    bigImage: 'assets/images/products/single/centered/4-big.jpg',
+    smallImage: 'assets/images/products/single/centered/4-small.jpg'
+  }
+];
+
+
+type ProductGalleryItemProps = {
+  bigImage: string;
+  image: string;
+  smallImage: string
+};
+
+const ProductGallery = ({ mainImage, galleryImages }: ProductGalleryProps) => {
+
+  const [activeProductImage, setActiveProductImage] = React.useState(images[2]);
+
+  const ProductGalleryItem = ({ bigImage, smallImage, image }: ProductGalleryItemProps) => {
+    return (
+      <a
+        className="product-gallery-item active"
+        data-image={image}
+        onClick={e => {
+          e.preventDefault();
+          setActiveProductImage({image, smallImage, bigImage});
+        }}
+        data-zoom-image={bigImage}
+      >
+        <img
+          src={smallImage}
+          alt="product side"
+        />
+      </a>
+    );
+  };
+
   return (
     <div className="col-md-6">
       <div className="product-gallery product-gallery-vertical">
@@ -8,8 +65,8 @@ const ProductGallery = () => {
           <figure className="product-main-image">
             <img
               id="product-zoom"
-              src="assets/images/products/single/centered/1.jpg"
-              data-zoom-image="assets/images/products/single/centered/1-big.jpg"
+              src={activeProductImage.image}
+              data-zoom-image={activeProductImage.bigImage}
               alt="product image"
             />
 
@@ -21,62 +78,16 @@ const ProductGallery = () => {
               <i className="icon-arrows"></i>
             </a>
           </figure>
-          {/* <!-- End .product-main-image --> */}
 
           <div id="product-zoom-gallery" className="product-image-gallery">
-            <a
-              className="product-gallery-item active"
-              href="#"
-              data-image="assets/images/products/single/centered/1.jpg"
-              data-zoom-image="assets/images/products/single/centered/1-big.jpg"
-            >
-              <img
-                src="assets/images/products/single/centered/1-small.jpg"
-                alt="product side"
-              />
-            </a>
-
-            <a
-              className="product-gallery-item"
-              href="#"
-              data-image="assets/images/products/single/centered/2.jpg"
-              data-zoom-image="assets/images/products/single/centered/2-big.jpg"
-            >
-              <img
-                src="assets/images/products/single/centered/2-small.jpg"
-                alt="product cross"
-              />
-            </a>
-
-            <a
-              className="product-gallery-item"
-              href="#"
-              data-image="assets/images/products/single/centered/3.jpg"
-              data-zoom-image="assets/images/products/single/centered/3-big.jpg"
-            >
-              <img
-                src="assets/images/products/single/centered/3-small.jpg"
-                alt="product with model"
-              />
-            </a>
-
-            <a
-              className="product-gallery-item"
-              href="#"
-              data-image="assets/images/products/single/centered/4.jpg"
-              data-zoom-image="assets/images/products/single/centered/4-big.jpg"
-            >
-              <img
-                src="assets/images/products/single/centered/4-small.jpg"
-                alt="product back"
-              />
-            </a>
+            {
+              images && images.map((image, index) => (
+                <ProductGalleryItem key={index} {...image} />
+              ))
+            }
           </div>
-          {/* <!-- End .product-image-gallery --> */}
         </div>
-        {/* <!-- End .row --> */}
       </div>
-      {/* <!-- End .product-gallery --> */}
     </div>
   );
 };

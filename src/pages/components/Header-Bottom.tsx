@@ -26,34 +26,34 @@ const HeaderBottom = () => {
                     <a href="!#">Daily offers</a>
                   </li>
                   <li className="item-lead">
-                    <a href="!#">Gift Ideas</a>
+                    <a href="!#">Laptops</a>
                   </li>
                   <li>
-                    <a href="!#">Beds</a>
+                    <a href="!#">Television & Monitors</a>
                   </li>
                   <li>
-                    <a href="!#">Lighting</a>
+                    <a href="!#">Smart Phones</a>
                   </li>
                   <li>
-                    <a href="!#">Sofas & Sleeper sofas</a>
+                    <a href="!#">Mouse</a>
+                  </li>
+                  <li>
+                    <a href="!#">Keyboard</a>
+                  </li>
+                  <li>
+                    <a href="!#">Sound & Speakers</a>
+                  </li>
+                  <li>
+                    <a href="!#">Power Banks</a>
+                  </li>
+                  <li>
+                    <a href="!#">Chargers</a>
+                  </li>
+                  <li>
+                    <a href="!#">Headphones</a>
                   </li>
                   <li>
                     <a href="!#">Storage</a>
-                  </li>
-                  <li>
-                    <a href="!#">Armchairs & Chaises</a>
-                  </li>
-                  <li>
-                    <a href="!#">Decoration </a>
-                  </li>
-                  <li>
-                    <a href="!#">Kitchen Cabinets</a>
-                  </li>
-                  <li>
-                    <a href="!#">Coffee & Tables</a>
-                  </li>
-                  <li>
-                    <a href="!#">Outdoor Furniture </a>
                   </li>
                 </ul>
               </nav>
