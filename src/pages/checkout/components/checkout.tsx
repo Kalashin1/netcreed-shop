@@ -1,6 +1,23 @@
 import React from 'react';
+import { z } from 'zod';
+import { handleSubmit } from '../helper';
+import { UserSchema } from '../schema';
+
 
 const CheckoutForm = () => {
+
+  const user = z.object(UserSchema);
+  type UserSchemaType = typeof UserSchema;
+  type USER = z.infer<typeof user>;
+
+  type UserSchemaKeys = [keyof UserSchemaType];
+
+  const getKeys = (obj: UserSchemaType): UserSchemaKeys => {
+    return Object.keys(obj) as UserSchemaKeys;
+  };
+
+  const keys = getKeys(UserSchema);
+
   return (
     <div className="checkout">
       <div className="container">
@@ -20,76 +37,19 @@ const CheckoutForm = () => {
         {/* <!-- End .checkout-discount --> */}
         <form action="#">
           <div className="row">
-            <div className="col-lg-9">
+            <div className="col-lg-8">
               <h2 className="checkout-title">Billing Details</h2>
               {/* <!-- End .checkout-title --> */}
               <div className="row">
-                <div className="col-sm-6">
-                  <label>First Name *</label>
-                  <input type="text" className="form-control" required />
-                </div>
-                {/* <!-- End .col-sm-6 --> */}
-
-                <div className="col-sm-6">
-                  <label>Last Name *</label>
-                  <input type="text" className="form-control" required />
-                </div>
-                {/* <!-- End .col-sm-6 --> */}
+                {keys && keys.map((key, index) => (
+                  <div className="col-sm-6" key={index}>
+                    <label>{key === 'firstName' ? 'First Name' : key === 'lastName' ? 'Last Name' : key}</label>
+                    <input type="text" className="form-control" required />
+                  </div>
+                ))}
+               
               </div>
-              {/* <!-- End .row --> */}
-
-              <label>Company Name (Optional)</label>
-              <input type="text" className="form-control" />
-
-              <label>Country *</label>
-              <input type="text" className="form-control" required />
-
-              <label>Street address *</label>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="House number and Street name"
-                required
-              />
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Appartments, suite, unit etc ..."
-                required
-              />
-
-              <div className="row">
-                <div className="col-sm-6">
-                  <label>Town / City *</label>
-                  <input type="text" className="form-control" required />
-                </div>
-                {/* <!-- End .col-sm-6 --> */}
-
-                <div className="col-sm-6">
-                  <label>State / County *</label>
-                  <input type="text" className="form-control" required />
-                </div>
-                {/* <!-- End .col-sm-6 --> */}
-              </div>
-              {/* <!-- End .row --> */}
-
-              <div className="row">
-                <div className="col-sm-6">
-                  <label>Postcode / ZIP *</label>
-                  <input type="text" className="form-control" required />
-                </div>
-                {/* <!-- End .col-sm-6 --> */}
-
-                <div className="col-sm-6">
-                  <label>Phone *</label>
-                  <input type="tel" className="form-control" required />
-                </div>
-                {/* <!-- End .col-sm-6 --> */}
-              </div>
-              {/* <!-- End .row --> */}
-
-              <label>Email address *</label>
-              <input type="email" className="form-control" required />
+              
 
               <div className="custom-control custom-checkbox">
                 <input

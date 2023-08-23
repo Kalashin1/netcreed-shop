@@ -1,6 +1,14 @@
 import React from 'react';
 
-const CartSummary = () => {
+interface CartSummaryProps {
+  subTotal: number;
+  shippingType?: number;
+}
+
+const CartSummary: React.FC<CartSummaryProps> = ({
+  subTotal,
+}) => {
+  const [total, setTotal] = React.useState(subTotal + 20);
   return (
     <aside className="col-lg-3">
       <div className="summary summary-cart">
@@ -11,7 +19,7 @@ const CartSummary = () => {
           <tbody>
             <tr className="summary-subtotal">
               <td>Subtotal:</td>
-              <td>$160.00</td>
+              <td>${subTotal}</td>
             </tr>
             {/* <!-- End .summary-subtotal --> */}
             <tr className="summary-shipping">
@@ -19,7 +27,7 @@ const CartSummary = () => {
               <td>&nbsp;</td>
             </tr>
 
-            <tr className="summary-shipping-row">
+            {/* <tr className="summary-shipping-row">
               <td>
                 <div className="custom-control custom-radio">
                   <input
@@ -35,13 +43,12 @@ const CartSummary = () => {
                     Free Shipping
                   </label>
                 </div>
-                {/* <!-- End .custom-control --> */}
               </td>
               <td>$0.00</td>
-            </tr>
+            </tr> */}
             {/* <!-- End .summary-shipping-row --> */}
 
-            <tr className="summary-shipping-row">
+            {/* <tr className="summary-shipping-row">
               <td>
                 <div className="custom-control custom-radio">
                   <input
@@ -57,10 +64,10 @@ const CartSummary = () => {
                     Standart:
                   </label>
                 </div>
-                {/* <!-- End .custom-control --> */}
+                
               </td>
               <td>$10.00</td>
-            </tr>
+            </tr> */}
             {/* <!-- End .summary-shipping-row --> */}
 
             <tr className="summary-shipping-row">
@@ -70,6 +77,7 @@ const CartSummary = () => {
                     type="radio"
                     id="express-shipping"
                     name="shipping"
+                    checked
                     className="custom-control-input"
                   />
                   <label
@@ -85,18 +93,18 @@ const CartSummary = () => {
             </tr>
             {/* <!-- End .summary-shipping-row --> */}
 
-            <tr className="summary-shipping-estimate">
+            {/* <tr className="summary-shipping-estimate">
               <td>
                 Estimate for Your Country
                 <br /> <a href="dashboard.html">Change address</a>
               </td>
               <td>&nbsp;</td>
-            </tr>
+            </tr> */}
             {/* <!-- End .summary-shipping-estimate --> */}
 
             <tr className="summary-total">
               <td>Total:</td>
-              <td>$160.00</td>
+              <td>${total}</td>
             </tr>
             {/* <!-- End .summary-total --> */}
           </tbody>

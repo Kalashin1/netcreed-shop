@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 
@@ -20,9 +21,9 @@ let _user: User | null;
 export const AuthContext = React.createContext<{
   user: User | null,
   getLoggedInUser?: (userId?: string) => Promise<User | null>
-}>({
-  user: null
-});
+    }>({
+      user: null
+    });
 
 function App() {
   const [user, setUser] = React.useState<typeof _user | null>(_user);

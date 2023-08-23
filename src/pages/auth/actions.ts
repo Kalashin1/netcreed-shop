@@ -56,9 +56,9 @@ Promise<[User|null, string | null]> => {
 
 
 export const getCurrentUser = (): [User | null, string | null] => {
-  const currrentUser = auth.currentUser;
-  if (currrentUser) {
-    return [currrentUser, null];
+  const currentUser = auth.currentUser;
+  if (currentUser) {
+    return [currentUser, null];
   } else {
     return [null, 'no current user'];
   }

@@ -1,8 +1,8 @@
 import React from 'react';
 
 interface ProductGalleryProps {
-  mainImage: string;
-  galleryImages: string[];
+  mainImage?: string;
+  galleryImages?: typeof images;
 }
 
 const images = [
@@ -29,15 +29,11 @@ const images = [
 ];
 
 
-type ProductGalleryItemProps = {
-  bigImage: string;
-  image: string;
-  smallImage: string
-};
+type ProductGalleryItemProps = typeof images[number]
 
 const ProductGallery = ({ mainImage, galleryImages }: ProductGalleryProps) => {
 
-  const [activeProductImage, setActiveProductImage] = React.useState(images[2]);
+  const [activeProductImage, setActiveProductImage] = React.useState(images[0]);
 
   const ProductGalleryItem = ({ bigImage, smallImage, image }: ProductGalleryItemProps) => {
     return (

@@ -4,7 +4,11 @@ import CheckoutForm from './components/checkout';
 
 const Checkout = () => {
   return (
-    <Layout>
+    <Layout 
+      breadCrumbSecondLevel='checkout'
+      pageHeaderTitle='Checkout'
+      pageHeaderSub='Kinanee'
+    >
       <CheckoutForm></CheckoutForm>
     </Layout>
   );

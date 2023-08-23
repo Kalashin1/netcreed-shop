@@ -11,13 +11,13 @@ import { getStorage, connectStorageEmulator } from 'firebase/storage';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: 'AIzaSyBU-XVfdaSQDY_TEn-lr7aRrcwLfi9l6xU',
-  authDomain: 'helvic-gleams.firebaseapp.com',
-  projectId: 'helvic-gleams',
-  storageBucket: 'helvic-gleams.appspot.com',
-  messagingSenderId: '694140323109',
-  appId: '1:694140323109:web:f356861a19d53fdcb346cc',
-  measurementId: 'G-04W1TVV423'
+  apiKey: 'AIzaSyDqrQKtd9G70ZMjTRn6xLVHEwMo8_PWYCE',
+  authDomain: 'hermes-2cb56.firebaseapp.com',
+  projectId: 'hermes-2cb56',
+  storageBucket: 'hermes-2cb56.appspot.com',
+  messagingSenderId: '157797851869',
+  appId: '1:157797851869:web:28a39cb3ea083513e53134',
+  measurementId: 'G-9JDZQHTL8F'
 };
 
 // Initialize Firebase
